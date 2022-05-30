@@ -34,6 +34,25 @@ if changeName {
 
 //switch
 
+switch a {
+case 0:
+    print("It's 0")
+case 1:
+    print("It's 1")
+case 5:
+    print("It's 5")
+    fallthrough
+case 6:
+    print("It's 6")
+default:
+    print("It's something else")
+}
+
 //Un autre conditionnel (guard)
+guard version != 0 else {
+    fatalError("Prevented divide by 0")
+}
+let result = Double(a) / version
+
 
 // Modélisation + projet
