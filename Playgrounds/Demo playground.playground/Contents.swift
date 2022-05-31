@@ -82,3 +82,46 @@ func loadURL() -> (statusCode: Int, message: String) {
 
 let requestResponse = loadURL().statusCode
 requestResponse
+
+@propertyWrapper
+struct Grade {
+
+    var value: Double
+
+    init(wrappedValue: Double) {
+        value = 0
+        value = cleanGrade(wrappedValue)
+    }
+
+    var wrappedValue: Double {
+        get { value }
+        set {
+            value = cleanGrade(newValue)
+        }
+    }
+
+    private func cleanGrade(_ grade: Double) -> Double {
+        if grade < 0 {
+            return 0
+        } else if grade > 20 {
+            return 20
+        } else {
+            return grade
+        }
+    }
+}
+
+struct Exam {
+
+    @Grade var result: Double = 0
+
+    func setGrade(@Grade grade: Double) {
+        print(grade)
+    }
+}
+
+var bac = Exam()
+bac.result = 100
+bac.result
+
+bac.setGrade(grade: 200)
