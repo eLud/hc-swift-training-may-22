@@ -56,3 +56,29 @@ let result = Double(a) / version
 
 
 // Modélisation + projet
+
+
+func learn(language: String) -> String {
+    return language
+}
+
+learn(language: "Swift")
+
+func learn(_ language: String, insteadOf anotherLanguage: String?) {
+    print("I learn " + language)
+    if let anotherLanguage = anotherLanguage {
+        print("Instead of " + anotherLanguage)
+    }
+}
+
+learn("Swift", insteadOf: "Objective-C")
+learn("Swift", insteadOf: nil)
+
+func loadURL() -> (statusCode: Int, message: String) {
+    //On essaye de charger une URL
+
+    return (200, "OK")
+}
+
+let requestResponse = loadURL().statusCode
+requestResponse

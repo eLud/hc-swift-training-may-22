@@ -56,3 +56,4 @@ student2.age //25
 
 classroom1.capacity // 30
 classroom2.capacity // 30
+

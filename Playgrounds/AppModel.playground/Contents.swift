@@ -1,6 +1,6 @@
 import Foundation
 
-enum ChickenBreed {
+enum ChickenBreed: Equatable {
     case australorp
     case maran
     case sussex
@@ -40,7 +40,7 @@ enum ChickenBreed {
 
 }
 
-struct Chicken {
+struct Chicken: Equatable {
 
     // Stored properties
     let id: String? // Optional<String>
@@ -61,18 +61,18 @@ struct Chicken {
 
     func sayHello() {
 //        print(id!) // Force unwrap operator
-        if let id = id {
-            print(id)
+        if let unwrappedID = id {
+            print(unwrappedID)
         } else {
             print(name)
         }
     }
 
     func registerMe() {
-        guard let id = id else { return }
+        guard let unwrappedID = id else { return }
 
         // make the registration
-        print(id)
+        print(unwrappedID)
     }
 }
 
@@ -93,8 +93,55 @@ if myChicken.id == nil {
 myChicken.sayHello()
 myChicken2.registerMe()
 
+if let uppercasedID = myChicken.id?.uppercased() {
+    print(uppercasedID)
+} else {
+    print("No ID for this chicken")
+}
 
 class ChickenHouse {
 
-    var chickens: [Chicken] = []
+    init(chickens: [Chicken] = []) {
+        self.chickens = chickens
+    }
+
+    // Collection de Truc
+    private var chickens: [Chicken]
+
+    // Fonction pour ajouter un truc
+    func add(_ chicken: Chicken) {
+        guard !chickens.contains(chicken) else { return }
+        chickens.append(chicken)
+    }
+
+    // Un moyen de lister les trucs
+    func list() -> [Chicken] {
+
+        for chicken in chickens {
+            print(chicken)
+        }
+
+        chickens.forEach { c in
+            print(c)
+        }
+
+        return chickens
+    }
+
+    //Bonus
+    // Un moyen de supprimer un truc
+    func cook(_ chicken: Chicken) {
+        guard let indexToRemove = chickens.firstIndex(of: chicken) else { return }
+        chickens.remove(at: indexToRemove)
+    }
 }
+
+let house = ChickenHouse()
+house.add(myChicken)
+house.add(myChicken2)
+house.add(myChicken)
+
+house.list()
+
+
+Set<String>().contains("Toto")
