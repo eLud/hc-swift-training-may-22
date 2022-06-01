@@ -40,7 +40,31 @@ enum ChickenBreed: Equatable {
 
 }
 
-struct Chicken: Equatable {
+protocol Identity {
+    var id: String? { get }
+}
+
+protocol Animal: Identity {
+
+    var name: String { get set }
+    var birthDate: Date { get }
+
+    func makeNoise()
+}
+
+extension Animal {
+    func makeNoise() {
+        print("Bouuhhouu")
+    }
+}
+
+struct Rabbit: Animal {
+    var name: String
+    let birthDate: Date
+    let id: String?
+}
+
+struct Chicken: Animal, Equatable {
 
     // Stored properties
     let id: String? // Optional<String>
@@ -74,6 +98,10 @@ struct Chicken: Equatable {
         // make the registration
         print(unwrappedID)
     }
+
+    func makeNoise() {
+        print("Cotcot")
+    }
 }
 
 let myChicken = Chicken(id: nil,
@@ -92,6 +120,7 @@ if myChicken.id == nil {
 
 myChicken.sayHello()
 myChicken2.registerMe()
+myChicken.makeNoise()
 
 if let uppercasedID = myChicken.id?.uppercased() {
     print(uppercasedID)

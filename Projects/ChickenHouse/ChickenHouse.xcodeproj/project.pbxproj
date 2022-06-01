@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		331C63972847A0330040CE0A /* ChickenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C63962847A0330040CE0A /* ChickenTableViewController.swift */; };
 		33F7422F28464FFE00836904 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7422E28464FFE00836904 /* AppDelegate.swift */; };
 		33F7423128464FFE00836904 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7423028464FFE00836904 /* SceneDelegate.swift */; };
 		33F7423328464FFE00836904 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7423228464FFE00836904 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		331C63962847A0330040CE0A /* ChickenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickenTableViewController.swift; sourceTree = "<group>"; };
 		33F7422B28464FFE00836904 /* ChickenHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChickenHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F7422E28464FFE00836904 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33F7423028464FFE00836904 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				33F7422E28464FFE00836904 /* AppDelegate.swift */,
 				33F7423028464FFE00836904 /* SceneDelegate.swift */,
 				33F7423228464FFE00836904 /* ViewController.swift */,
+				331C63962847A0330040CE0A /* ChickenTableViewController.swift */,
 				33F7423428464FFE00836904 /* Main.storyboard */,
 				33F7423728464FFF00836904 /* Assets.xcassets */,
 				33F7423928464FFF00836904 /* LaunchScreen.storyboard */,
@@ -268,6 +271,7 @@
 				33F7425F2846641A00836904 /* Chicken.swift in Sources */,
 				33F742612846642800836904 /* ChickenHouse.swift in Sources */,
 				33F7422F28464FFE00836904 /* AppDelegate.swift in Sources */,
+				331C63972847A0330040CE0A /* ChickenTableViewController.swift in Sources */,
 				33F7423128464FFE00836904 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
