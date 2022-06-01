@@ -16,6 +16,8 @@
 		33F7424628464FFF00836904 /* ChickenHouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7424528464FFF00836904 /* ChickenHouseTests.swift */; };
 		33F7425028464FFF00836904 /* ChickenHouseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7424F28464FFF00836904 /* ChickenHouseUITests.swift */; };
 		33F7425228464FFF00836904 /* ChickenHouseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7425128464FFF00836904 /* ChickenHouseUITestsLaunchTests.swift */; };
+		33F7425F2846641A00836904 /* Chicken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7425E2846641A00836904 /* Chicken.swift */; };
+		33F742612846642800836904 /* ChickenHouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F742602846642800836904 /* ChickenHouse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		33F7424B28464FFF00836904 /* ChickenHouseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChickenHouseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F7424F28464FFF00836904 /* ChickenHouseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickenHouseUITests.swift; sourceTree = "<group>"; };
 		33F7425128464FFF00836904 /* ChickenHouseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickenHouseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		33F7425E2846641A00836904 /* Chicken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chicken.swift; sourceTree = "<group>"; };
+		33F742602846642800836904 /* ChickenHouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickenHouse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				33F7423728464FFF00836904 /* Assets.xcassets */,
 				33F7423928464FFF00836904 /* LaunchScreen.storyboard */,
 				33F7423C28464FFF00836904 /* Info.plist */,
+				33F7425E2846641A00836904 /* Chicken.swift */,
+				33F742602846642800836904 /* ChickenHouse.swift */,
 			);
 			path = ChickenHouse;
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				33F7423328464FFE00836904 /* ViewController.swift in Sources */,
+				33F7425F2846641A00836904 /* Chicken.swift in Sources */,
+				33F742612846642800836904 /* ChickenHouse.swift in Sources */,
 				33F7422F28464FFE00836904 /* AppDelegate.swift in Sources */,
 				33F7423128464FFE00836904 /* SceneDelegate.swift in Sources */,
 			);
