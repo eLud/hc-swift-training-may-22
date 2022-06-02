@@ -9,33 +9,47 @@ import UIKit
 
 class ChickenTableViewController: UITableViewController {
 
+    let chickenHouse = ChickenHouse()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        let myChicken = Chicken(id: nil,
+                                name: "Poule1",
+                                birthDate: Date(),
+                                breed: .other(name: "HumanCoderix"))
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        let myChicken2 = Chicken(id: "12R-87U-986",
+                                name: "Poule2",
+                                birthDate: Date(),
+                                breed: .other(name: "HumanCoderix"))
+
+        chickenHouse.add(myChicken)
+        chickenHouse.add(myChicken2)
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 1
+        return chickenHouse.list().count
     }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        // Configure the cell...
+        let chicken = chickenHouse.list()[indexPath.row]
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: "chickenCell", for: indexPath)
+
+        var content = cell.defaultContentConfiguration()
+        content.text = chicken.name
+        content.secondaryText = chicken.id
+
+        cell.contentConfiguration = content
 
         return cell
     }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		331C63972847A0330040CE0A /* ChickenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C63962847A0330040CE0A /* ChickenTableViewController.swift */; };
+		331C63992847BAA00040CE0A /* ChickenDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C63982847BAA00040CE0A /* ChickenDetailsViewController.swift */; };
 		33F7422F28464FFE00836904 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7422E28464FFE00836904 /* AppDelegate.swift */; };
 		33F7423128464FFE00836904 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7423028464FFE00836904 /* SceneDelegate.swift */; };
 		33F7423328464FFE00836904 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7423228464FFE00836904 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		331C63962847A0330040CE0A /* ChickenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickenTableViewController.swift; sourceTree = "<group>"; };
+		331C63982847BAA00040CE0A /* ChickenDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickenDetailsViewController.swift; sourceTree = "<group>"; };
 		33F7422B28464FFE00836904 /* ChickenHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChickenHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F7422E28464FFE00836904 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33F7423028464FFE00836904 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		331C639A284898870040CE0A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				33F7423228464FFE00836904 /* ViewController.swift */,
+				331C63962847A0330040CE0A /* ChickenTableViewController.swift */,
+				331C63982847BAA00040CE0A /* ChickenDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		331C639B284898910040CE0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33F7425E2846641A00836904 /* Chicken.swift */,
+				33F742602846642800836904 /* ChickenHouse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		33F7422228464FFE00836904 = {
 			isa = PBXGroup;
 			children = (
@@ -107,14 +128,12 @@
 			children = (
 				33F7422E28464FFE00836904 /* AppDelegate.swift */,
 				33F7423028464FFE00836904 /* SceneDelegate.swift */,
-				33F7423228464FFE00836904 /* ViewController.swift */,
-				331C63962847A0330040CE0A /* ChickenTableViewController.swift */,
+				331C639B284898910040CE0A /* Model */,
+				331C639A284898870040CE0A /* ViewControllers */,
 				33F7423428464FFE00836904 /* Main.storyboard */,
 				33F7423728464FFF00836904 /* Assets.xcassets */,
 				33F7423928464FFF00836904 /* LaunchScreen.storyboard */,
 				33F7423C28464FFF00836904 /* Info.plist */,
-				33F7425E2846641A00836904 /* Chicken.swift */,
-				33F742602846642800836904 /* ChickenHouse.swift */,
 			);
 			path = ChickenHouse;
 			sourceTree = "<group>";
@@ -272,6 +291,7 @@
 				33F742612846642800836904 /* ChickenHouse.swift in Sources */,
 				33F7422F28464FFE00836904 /* AppDelegate.swift in Sources */,
 				331C63972847A0330040CE0A /* ChickenTableViewController.swift in Sources */,
+				331C63992847BAA00040CE0A /* ChickenDetailsViewController.swift in Sources */,
 				33F7423128464FFE00836904 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,6 +479,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -487,6 +508,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
