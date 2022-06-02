@@ -42,7 +42,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="DqU-lR-Hfa" kind="show" id="nGN-6N-sg9"/>
+                                    <segue destination="DqU-lR-Hfa" kind="show" identifier="showDetails" id="nGN-6N-sg9"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -54,7 +54,7 @@
                     <navigationItem key="navigationItem" id="YOg-DQ-2Vf">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="aHr-8p-hk0">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="presentation" id="2vy-Ul-kpI"/>
+                                <segue destination="BYZ-38-t0r" kind="presentation" identifier="showForm" id="2vy-Ul-kpI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -357,6 +357,10 @@
                                     <segue destination="aOC-fM-IDz" kind="presentation" id="GKU-vr-VIB"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="agO-uV-di8">
+                                <rect key="frame" x="0.0" y="129" width="414" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SdI-Ab-PHX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -366,6 +370,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2UJ-Mn-MyQ"/>
+                    <connections>
+                        <outlet property="chickenNameLabel" destination="gBl-rv-s0L" id="Feh-GT-Ywg"/>
+                        <outlet property="pickerView" destination="agO-uV-di8" id="HDR-nd-Iw4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mqw-iB-ApA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -376,7 +384,7 @@
             <objects>
                 <viewController id="aOC-fM-IDz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="joJ-U3-SUe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSU-l1-q1p">
@@ -490,7 +498,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="qRq-r1-goc"/>
+        <segue reference="GKU-vr-VIB"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>

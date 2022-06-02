@@ -21,6 +21,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
+    var chickenHouse: ChickenHouse?
+
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +60,9 @@ class ViewController: UIViewController {
         }
 
         middleStackView.setCustomSpacing(50.0, after: activityIndicator)
+
+        let randomChicken = Chicken(id: UUID().uuidString, name: "Poule \(Int.random(in: 0...100000))", birthDate: Date(), breed: .australorp)
+        chickenHouse?.add(randomChicken)
     }
 
 }
