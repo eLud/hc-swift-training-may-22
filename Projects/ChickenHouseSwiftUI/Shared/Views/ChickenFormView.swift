@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ChickenFormView.swift
 //  Shared
 //
 //  Created by Ludovic Ollagnier on 02/06/2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ChickenFormView: View {
 
     @State var name: String = ""
     @State var id: String?
@@ -28,7 +28,6 @@ struct ContentView: View {
                         }
                     }
                 }
-
                 Section {
                     if let id = id {
                         Text(id)
@@ -38,14 +37,18 @@ struct ContentView: View {
                         }
                     }
                 }
-
                 Section {
-                    Button("Save") {
-
-                    }
+                    Button("Save", action: {
+                        createChicken(with: name, birthDate: birthDate, breed: breed, id: id)
+                    })
                 }
             }
         }
+    }
+
+    private func createChicken(with name: String, birthDate: Date, breed: ChickenBreed, id: String?) {
+        let chicken = Chicken(vetId: id, name: name, birthDate: birthDate, breed: breed)
+        /// Add to chicken house
     }
 }
 
@@ -66,10 +69,10 @@ extension Text {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ContentView()
-            ContentView()
+            ChickenFormView()
+            ChickenFormView()
                 .preferredColorScheme(.dark)
-            ContentView()
+            ChickenFormView()
                 .environment(\.sizeCategory, .extraExtraExtraLarge)
                 .previewInterfaceOrientation(.landscapeLeft)
                 .preferredColorScheme(.dark)

@@ -12,7 +12,7 @@ struct ChickenHouseSwiftUIApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ChickenFormView()
         }
     }
 }

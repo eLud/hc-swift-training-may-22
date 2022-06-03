@@ -13,8 +13,8 @@
 		331C63C92848E5F30040CE0A /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C63C82848E5F30040CE0A /* Tests_macOSLaunchTests.swift */; };
 		331C63CA2848E5F30040CE0A /* ChickenHouseSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C63A22848E5F20040CE0A /* ChickenHouseSwiftUIApp.swift */; };
 		331C63CB2848E5F30040CE0A /* ChickenHouseSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C63A22848E5F20040CE0A /* ChickenHouseSwiftUIApp.swift */; };
-		331C63CC2848E5F30040CE0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C63A32848E5F20040CE0A /* ContentView.swift */; };
-		331C63CD2848E5F30040CE0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C63A32848E5F20040CE0A /* ContentView.swift */; };
+		331C63CC2848E5F30040CE0A /* ChickenFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C63A32848E5F20040CE0A /* ChickenFormView.swift */; };
+		331C63CD2848E5F30040CE0A /* ChickenFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C63A32848E5F20040CE0A /* ChickenFormView.swift */; };
 		331C63CE2848E5F30040CE0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 331C63A42848E5F30040CE0A /* Assets.xcassets */; };
 		331C63CF2848E5F30040CE0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 331C63A42848E5F30040CE0A /* Assets.xcassets */; };
 		331C63E0284907C20040CE0A /* Chicken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C63DF284907C20040CE0A /* Chicken.swift */; };
@@ -23,6 +23,10 @@
 		331C63E4284907D20040CE0A /* ChickenHouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C63E2284907D20040CE0A /* ChickenHouse.swift */; };
 		331C63E628490F320040CE0A /* ChickenListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C63E528490F310040CE0A /* ChickenListView.swift */; };
 		331C63E728490F320040CE0A /* ChickenListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C63E528490F310040CE0A /* ChickenListView.swift */; };
+		331C63E92849ED440040CE0A /* ChickenDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C63E82849ED440040CE0A /* ChickenDetailsView.swift */; };
+		331C63EA2849ED440040CE0A /* ChickenDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C63E82849ED440040CE0A /* ChickenDetailsView.swift */; };
+		331C63EE2849F4320040CE0A /* ChickenProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C63ED2849F4320040CE0A /* ChickenProfileImage.swift */; };
+		331C63EF2849F4320040CE0A /* ChickenProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C63ED2849F4320040CE0A /* ChickenProfileImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +48,7 @@
 
 /* Begin PBXFileReference section */
 		331C63A22848E5F20040CE0A /* ChickenHouseSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickenHouseSwiftUIApp.swift; sourceTree = "<group>"; };
-		331C63A32848E5F20040CE0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		331C63A32848E5F20040CE0A /* ChickenFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickenFormView.swift; sourceTree = "<group>"; };
 		331C63A42848E5F30040CE0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		331C63A92848E5F30040CE0A /* ChickenHouseSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChickenHouseSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		331C63AF2848E5F30040CE0A /* ChickenHouseSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChickenHouseSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +62,8 @@
 		331C63DF284907C20040CE0A /* Chicken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chicken.swift; sourceTree = "<group>"; };
 		331C63E2284907D20040CE0A /* ChickenHouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickenHouse.swift; sourceTree = "<group>"; };
 		331C63E528490F310040CE0A /* ChickenListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickenListView.swift; sourceTree = "<group>"; };
+		331C63E82849ED440040CE0A /* ChickenDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickenDetailsView.swift; sourceTree = "<group>"; };
+		331C63ED2849F4320040CE0A /* ChickenProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickenProfileImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				331C63A22848E5F20040CE0A /* ChickenHouseSwiftUIApp.swift */,
-				331C63A32848E5F20040CE0A /* ContentView.swift */,
-				331C63DF284907C20040CE0A /* Chicken.swift */,
-				331C63E528490F310040CE0A /* ChickenListView.swift */,
-				331C63E2284907D20040CE0A /* ChickenHouse.swift */,
+				331C63EC2849ED5B0040CE0A /* Views */,
+				331C63EB2849ED530040CE0A /* Models */,
 				331C63A42848E5F30040CE0A /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -151,6 +155,26 @@
 				331C63C82848E5F30040CE0A /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		331C63EB2849ED530040CE0A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				331C63DF284907C20040CE0A /* Chicken.swift */,
+				331C63E2284907D20040CE0A /* ChickenHouse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		331C63EC2849ED5B0040CE0A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				331C63A32848E5F20040CE0A /* ChickenFormView.swift */,
+				331C63E82849ED440040CE0A /* ChickenDetailsView.swift */,
+				331C63E528490F310040CE0A /* ChickenListView.swift */,
+				331C63ED2849F4320040CE0A /* ChickenProfileImage.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,10 +335,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				331C63CC2848E5F30040CE0A /* ContentView.swift in Sources */,
+				331C63CC2848E5F30040CE0A /* ChickenFormView.swift in Sources */,
 				331C63CA2848E5F30040CE0A /* ChickenHouseSwiftUIApp.swift in Sources */,
 				331C63E3284907D20040CE0A /* ChickenHouse.swift in Sources */,
+				331C63E92849ED440040CE0A /* ChickenDetailsView.swift in Sources */,
 				331C63E0284907C20040CE0A /* Chicken.swift in Sources */,
+				331C63EE2849F4320040CE0A /* ChickenProfileImage.swift in Sources */,
 				331C63E628490F320040CE0A /* ChickenListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,10 +349,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				331C63CD2848E5F30040CE0A /* ContentView.swift in Sources */,
+				331C63CD2848E5F30040CE0A /* ChickenFormView.swift in Sources */,
 				331C63CB2848E5F30040CE0A /* ChickenHouseSwiftUIApp.swift in Sources */,
 				331C63E4284907D20040CE0A /* ChickenHouse.swift in Sources */,
+				331C63EA2849ED440040CE0A /* ChickenDetailsView.swift in Sources */,
 				331C63E1284907C20040CE0A /* Chicken.swift in Sources */,
+				331C63EF2849F4320040CE0A /* ChickenProfileImage.swift in Sources */,
 				331C63E728490F320040CE0A /* ChickenListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
