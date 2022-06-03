@@ -42,6 +42,9 @@ struct ChickenFormView: View {
                     }
                 }
                 Section {
+                    Button("Cancel", action: {
+                        showForm.toggle()
+                    })
                     Button("Save", action: {
                         createChicken(with: name, birthDate: birthDate, breed: breed, id: id)
                     })
