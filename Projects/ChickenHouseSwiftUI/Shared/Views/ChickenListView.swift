@@ -15,12 +15,14 @@ struct ChickenListView: View {
     var body: some View {
         VStack {
             List(chickenHouse.list()) { chicken in
-                VStack(alignment: .leading) {
-                    Text(chicken.name)
-                    if let vetId = chicken.vetId {
-                        Text(vetId)
-                            .font(.footnote)
-                            .foregroundColor(.gray)
+                NavigationLink(destination: ChickenDetailsView(chicken: chicken)) {
+                    VStack(alignment: .leading) {
+                        Text(chicken.name)
+                        if let vetId = chicken.vetId {
+                            Text(vetId)
+                                .font(.footnote)
+                                .foregroundColor(.gray)
+                        }
                     }
                 }
             }
