@@ -10,6 +10,9 @@ import SwiftUI
 struct ChickenProfileImage: View {
 
     let chicken: Chicken
+
+    @State private var angle: Angle = .degrees(-10)
+    @State private var offset: Double = 0
     
     var body: some View {
         ZStack {
@@ -23,9 +26,17 @@ struct ChickenProfileImage: View {
                 Text(chicken.name)
                     .background(Color.white)
             }
-        }.frame(width: 200, height: 200)
-//            .rotationEffect(Angle.init(degrees: -10))
-            .rotation3DEffect(.degrees(-10), axis: (x: 1, y:5 , z:9 ))
+        }
+        .frame(width: 200, height: 200)
+        .rotation3DEffect(angle, axis: (x: 1, y:5 , z:9 ))
+        .offset(x: offset, y: 0)
+        .onTapGesture {
+            withAnimation {
+                angle = Angle(degrees: Double.random(in: -90.0...90.0))
+                offset = Double.random(in: -100...100)
+            }
+        }
+        .animation(.easeInOut(duration: 3), value: angle)
     }
 }
 

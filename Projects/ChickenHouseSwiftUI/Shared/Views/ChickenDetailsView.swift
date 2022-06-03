@@ -16,6 +16,7 @@ struct ChickenDetailsView: View {
             ChickenProfileImage(chicken: chicken)
             Text(chicken.name)
             Text(chicken.vetId ?? "This chicken is not identified")
+            Text("\(chicken.name) \(chicken.breed.stringValue)")
         }.navigationTitle(Text(chicken.name))
     }
 
