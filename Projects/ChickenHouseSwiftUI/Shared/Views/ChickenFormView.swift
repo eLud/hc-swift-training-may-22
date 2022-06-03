@@ -20,25 +20,34 @@ struct ChickenFormView: View {
     let chickenHouse: ChickenHouse
 
     var body: some View {
+        #if os(macOS)
+        form
+            .padding()
+        #else
         NavigationView {
-            Form {
-                Section {
-                    TextField("Chicken name", text: $name)
-                    DatePicker("Birth date", selection: $birthDate, displayedComponents: .date)
-                    Picker(selection: $breed, label: Text("Breed")) {
-                        ForEach(ChickenBreed.allCases) { breed in
-                            Text(breed.stringValue)
-                                .tag(breed)
-                        }
+            form
+        }
+        #endif
+    }
+
+    private var form: some View {
+        Form {
+            Section {
+                TextField("Chicken name", text: $name)
+                DatePicker("Birth date", selection: $birthDate, displayedComponents: .date)
+                Picker(selection: $breed, label: Text("Breed")) {
+                    ForEach(ChickenBreed.allCases) { breed in
+                        Text(breed.stringValue)
+                            .tag(breed)
                     }
                 }
-                Section {
-                    if let id = id {
-                        Text(id)
-                    } else {
-                        Button("Generate ID") {
-                            id = UUID().uuidString
-                        }
+            }
+            Section {
+                if let id = id {
+                    Text(id)
+                } else {
+                    Button("Generate ID") {
+                        id = UUID().uuidString
                     }
                 }
                 Section {
