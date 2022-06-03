@@ -50,18 +50,18 @@ struct ChickenFormView: View {
                         id = UUID().uuidString
                     }
                 }
-                Section {
-                    Button("Cancel", action: {
-                        showForm.toggle()
-                    })
-                    Button("Save", action: {
-                        createChicken(with: name, birthDate: birthDate, breed: breed, id: id)
-                    })
-                }
+            }
+            Section {
+                Button("Cancel", action: {
+                    showForm.toggle()
+                })
+                Button("Save", action: {
+                    createChicken(with: name, birthDate: birthDate, breed: breed, id: id)
+                })
             }
         }
     }
-
+    
     private func createChicken(with name: String, birthDate: Date, breed: ChickenBreed, id: String?) {
         let chicken = Chicken(vetId: id, name: name, birthDate: birthDate, breed: breed)
         chickenHouse.add(chicken)
