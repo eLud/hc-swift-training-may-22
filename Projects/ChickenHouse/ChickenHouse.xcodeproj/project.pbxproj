@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		331C63972847A0330040CE0A /* ChickenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C63962847A0330040CE0A /* ChickenTableViewController.swift */; };
 		331C63992847BAA00040CE0A /* ChickenDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C63982847BAA00040CE0A /* ChickenDetailsViewController.swift */; };
+		33CE9993284A5F69003C5507 /* ChickenProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CE9992284A5F69003C5507 /* ChickenProfileImage.swift */; };
 		33F7422F28464FFE00836904 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7422E28464FFE00836904 /* AppDelegate.swift */; };
 		33F7423128464FFE00836904 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7423028464FFE00836904 /* SceneDelegate.swift */; };
 		33F7423328464FFE00836904 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7423228464FFE00836904 /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		331C63962847A0330040CE0A /* ChickenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickenTableViewController.swift; sourceTree = "<group>"; };
 		331C63982847BAA00040CE0A /* ChickenDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickenDetailsViewController.swift; sourceTree = "<group>"; };
+		33CE9992284A5F69003C5507 /* ChickenProfileImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChickenProfileImage.swift; path = ../../ChickenHouseSwiftUI/Shared/Views/ChickenProfileImage.swift; sourceTree = "<group>"; };
 		33F7422B28464FFE00836904 /* ChickenHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChickenHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F7422E28464FFE00836904 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33F7423028464FFE00836904 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			children = (
 				33F7422E28464FFE00836904 /* AppDelegate.swift */,
 				33F7423028464FFE00836904 /* SceneDelegate.swift */,
+				33CE9992284A5F69003C5507 /* ChickenProfileImage.swift */,
 				331C639B284898910040CE0A /* Model */,
 				331C639A284898870040CE0A /* ViewControllers */,
 				33F7423428464FFE00836904 /* Main.storyboard */,
@@ -291,6 +294,7 @@
 				33F742612846642800836904 /* ChickenHouse.swift in Sources */,
 				33F7422F28464FFE00836904 /* AppDelegate.swift in Sources */,
 				331C63972847A0330040CE0A /* ChickenTableViewController.swift in Sources */,
+				33CE9993284A5F69003C5507 /* ChickenProfileImage.swift in Sources */,
 				331C63992847BAA00040CE0A /* ChickenDetailsViewController.swift in Sources */,
 				33F7423128464FFE00836904 /* SceneDelegate.swift in Sources */,
 			);

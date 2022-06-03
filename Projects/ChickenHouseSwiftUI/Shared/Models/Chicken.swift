@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ChickenBreed: Equatable, CaseIterable, Identifiable {
+enum ChickenBreed: Equatable, CaseIterable, Identifiable, Codable {
     case australorp
     case maran
     case sussex
@@ -83,7 +83,7 @@ struct Rabbit: Animal {
     let vetId: String?
 }
 
-struct Chicken: Animal, Equatable, Identifiable {
+struct Chicken: Animal, Equatable, Identifiable, Codable {
 
     // Stored properties
     let vetId: String? // Optional<String>

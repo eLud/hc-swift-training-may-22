@@ -7,18 +7,19 @@
 
 import Foundation
 
-class ChickenHouse: ObservableObject {
+class ChickenHouse: ObservableObject, Codable {
 
     init(chickens: [Chicken] = []) {
         self.chickens = chickens
     }
 
     // Collection de Truc
-    @Published private var chickens: [Chicken]
+    private var chickens: [Chicken]
 
     // Fonction pour ajouter un truc
     func add(_ chicken: Chicken) {
         guard !chickens.contains(chicken) else { return }
+        objectWillChange.send()
         chickens.append(chicken)
     }
 
@@ -40,6 +41,7 @@ class ChickenHouse: ObservableObject {
     // Un moyen de supprimer un truc
     func cook(_ chicken: Chicken) {
         guard let indexToRemove = chickens.firstIndex(of: chicken) else { return }
+        objectWillChange.send()
         chickens.remove(at: indexToRemove)
     }
 }

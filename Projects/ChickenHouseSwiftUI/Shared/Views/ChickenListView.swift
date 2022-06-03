@@ -12,21 +12,15 @@ struct ChickenListView: View {
     @ObservedObject var chickenHouse: ChickenHouse
     @State private var showForm = false
 
+    @State private var searchTerms: String = ""
+
     var body: some View {
-        VStack {
-            List(chickenHouse.list()) { chicken in
-                NavigationLink(destination: ChickenDetailsView(chicken: chicken)) {
-                    VStack(alignment: .leading) {
-                        Text(chicken.name)
-                        if let vetId = chicken.vetId {
-                            Text(vetId)
-                                .font(.footnote)
-                                .foregroundColor(.gray)
-                        }
-                    }
-                }
+        List(chickenHouse.list()) { c in
+            NavigationLink(destination: ChickenDetailsView(chicken: c)) {
+                ChickenCell(chicken: c)
             }
         }
+        .searchable(text: $searchTerms)
         .navigationTitle("Chicken List")
         .toolbar {
             ToolbarItem(placement: .automatic) {

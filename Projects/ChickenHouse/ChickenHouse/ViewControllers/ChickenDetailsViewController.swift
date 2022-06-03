@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class ChickenDetailsViewController: UIViewController {
 
@@ -23,6 +24,10 @@ class ChickenDetailsViewController: UIViewController {
 
         pickerView.delegate = self
         pickerView.dataSource = self
+
+        //UIViewControllerRepresentable to create a SwiftUI view from a UIKit ViewController
+        let profile = UIHostingController(rootView: ChickenProfileImage(chicken: chicken!))
+        present(profile, animated: true, completion: nil)
     }
 
 }

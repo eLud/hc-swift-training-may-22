@@ -27,6 +27,10 @@
 		331C63EA2849ED440040CE0A /* ChickenDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C63E82849ED440040CE0A /* ChickenDetailsView.swift */; };
 		331C63EE2849F4320040CE0A /* ChickenProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C63ED2849F4320040CE0A /* ChickenProfileImage.swift */; };
 		331C63EF2849F4320040CE0A /* ChickenProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C63ED2849F4320040CE0A /* ChickenProfileImage.swift */; };
+		33CE9956284A32A1003C5507 /* ChickenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CE9955284A32A1003C5507 /* ChickenCell.swift */; };
+		33CE9957284A32A1003C5507 /* ChickenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CE9955284A32A1003C5507 /* ChickenCell.swift */; };
+		33CE9959284A3E74003C5507 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CE9958284A3E74003C5507 /* SettingsView.swift */; };
+		33CE995A284A3E74003C5507 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CE9958284A3E74003C5507 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,8 @@
 		331C63E528490F310040CE0A /* ChickenListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickenListView.swift; sourceTree = "<group>"; };
 		331C63E82849ED440040CE0A /* ChickenDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickenDetailsView.swift; sourceTree = "<group>"; };
 		331C63ED2849F4320040CE0A /* ChickenProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickenProfileImage.swift; sourceTree = "<group>"; };
+		33CE9955284A32A1003C5507 /* ChickenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChickenCell.swift; sourceTree = "<group>"; };
+		33CE9958284A3E74003C5507 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +179,8 @@
 				331C63E82849ED440040CE0A /* ChickenDetailsView.swift */,
 				331C63E528490F310040CE0A /* ChickenListView.swift */,
 				331C63ED2849F4320040CE0A /* ChickenProfileImage.swift */,
+				33CE9955284A32A1003C5507 /* ChickenCell.swift */,
+				33CE9958284A3E74003C5507 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -336,7 +344,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				331C63CC2848E5F30040CE0A /* ChickenFormView.swift in Sources */,
+				33CE9956284A32A1003C5507 /* ChickenCell.swift in Sources */,
 				331C63CA2848E5F30040CE0A /* ChickenHouseSwiftUIApp.swift in Sources */,
+				33CE9959284A3E74003C5507 /* SettingsView.swift in Sources */,
 				331C63E3284907D20040CE0A /* ChickenHouse.swift in Sources */,
 				331C63E92849ED440040CE0A /* ChickenDetailsView.swift in Sources */,
 				331C63E0284907C20040CE0A /* Chicken.swift in Sources */,
@@ -350,7 +360,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				331C63CD2848E5F30040CE0A /* ChickenFormView.swift in Sources */,
+				33CE9957284A32A1003C5507 /* ChickenCell.swift in Sources */,
 				331C63CB2848E5F30040CE0A /* ChickenHouseSwiftUIApp.swift in Sources */,
+				33CE995A284A3E74003C5507 /* SettingsView.swift in Sources */,
 				331C63E4284907D20040CE0A /* ChickenHouse.swift in Sources */,
 				331C63EA2849ED440040CE0A /* ChickenDetailsView.swift in Sources */,
 				331C63E1284907C20040CE0A /* Chicken.swift in Sources */,

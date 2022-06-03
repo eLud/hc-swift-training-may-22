@@ -24,7 +24,7 @@ struct ChickenHouseSwiftUIApp: App {
                     Text("Chickens")
                     Image(systemName: "list.star")
                 }
-                Text("Settings")
+                SettingsView(chickenHouse: chickenHouse)
                     .tabItem {
                         Text("Settings")
                         Image(systemName: "gearshape")

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ChickenDetailsView: View {
 
+    @AppStorage("savedValue") var value: String = "Hello"
+
     let chicken: Chicken
 
     var body: some View {
@@ -17,6 +19,7 @@ struct ChickenDetailsView: View {
             Text(chicken.name)
             Text(chicken.vetId ?? "This chicken is not identified")
             Text("\(chicken.name) \(chicken.breed.stringValue)")
+            TextField("Value", text: $value)
         }.navigationTitle(Text(chicken.name))
     }
 
