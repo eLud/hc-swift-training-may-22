@@ -7,23 +7,19 @@
 
 import Foundation
 
-class ChickenHouse {
+class ChickenHouse: ObservableObject {
 
     init(chickens: [Chicken] = []) {
         self.chickens = chickens
     }
 
     // Collection de Truc
-    private var chickens: [Chicken]
+    @Published private var chickens: [Chicken]
 
     // Fonction pour ajouter un truc
     func add(_ chicken: Chicken) {
         guard !chickens.contains(chicken) else { return }
         chickens.append(chicken)
-
-        // Post a notification to the center
-        let notCenter = NotificationCenter.default
-        notCenter.post(name: Notification.Name("chickenAdded"), object: self, userInfo: ["chickenAdded": chicken])
     }
 
     // Un moyen de lister les trucs
@@ -45,7 +41,5 @@ class ChickenHouse {
     func cook(_ chicken: Chicken) {
         guard let indexToRemove = chickens.firstIndex(of: chicken) else { return }
         chickens.remove(at: indexToRemove)
-        let notCenter = NotificationCenter.default
-        notCenter.post(name: Notification.Name("chickenRemoved"), object: self, userInfo: ["chickenRemoved": chicken])
     }
 }

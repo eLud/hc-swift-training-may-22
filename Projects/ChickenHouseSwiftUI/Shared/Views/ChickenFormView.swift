@@ -15,6 +15,10 @@ struct ChickenFormView: View {
     @State var birthDate: Date = Date()
     @State var breed: ChickenBreed = .australorp
 
+    @Binding var showForm: Bool
+
+    let chickenHouse: ChickenHouse
+
     var body: some View {
         NavigationView {
             Form {
@@ -48,7 +52,8 @@ struct ChickenFormView: View {
 
     private func createChicken(with name: String, birthDate: Date, breed: ChickenBreed, id: String?) {
         let chicken = Chicken(vetId: id, name: name, birthDate: birthDate, breed: breed)
-        /// Add to chicken house
+        chickenHouse.add(chicken)
+        showForm = false
     }
 }
 
@@ -68,11 +73,12 @@ extension Text {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
+        let house = ChickenHouse()
         Group {
-            ChickenFormView()
-            ChickenFormView()
+            ChickenFormView(showForm: .constant(true), chickenHouse: house)
+            ChickenFormView(showForm: .constant(true), chickenHouse: house)
                 .preferredColorScheme(.dark)
-            ChickenFormView()
+            ChickenFormView(showForm: .constant(true), chickenHouse: house)
                 .environment(\.sizeCategory, .extraExtraExtraLarge)
                 .previewInterfaceOrientation(.landscapeLeft)
                 .preferredColorScheme(.dark)
